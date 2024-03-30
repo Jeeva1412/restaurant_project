@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Resturant</title>
+
+    <link rel="icon" type="image/png" href="img/team-3.jpg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- main container -->
+    <div class="container-xxl">
+      <div class="container-xxl mb-" id="hero-container">
+        <!-- navbar section start -->
+        <nav class="navbar navbar-expand-lg bg-transparent m-0 p-0">
+          <a href="#" class="navbar-brand px-4"
+            ><span><i class="fa-solid fa-utensils pe-2"></i></span>Restaurant</a
+          >
+          <button
+            type="button"
+            class="navbar-toggler me-4 me-lg-0 text-warning rounded-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-collapse"
+            id="nav-btn"
+          >
+            <span class=""><i class="fa-solid fa-bars"></i></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-lg-3 ps-lg-0 ps-4 pt-lg-0 pt-2">
+              <li class="nav-item">
+                <a href="#hero" class="nav-link active" data-bs-toggle=""
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about-col" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link">Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="#menus" class="nav-link">Menu</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  href="#dropown-page"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >pages</a
+                >
+                <div
+                  class="dropdown-menu dropdown-menu-dark me-lg-0 me-5 rounded-1 active"
+                  id="dropdown-page"
+                >
+                  <a href="#reservation" class="dropdown-item bg-transparent">Booking</a>
+                  <a href="#our-team" class="dropdown-item bg-transparent">Our Team</a>
+                  <a href="#testimonial" class="dropdown-item bg-transparent">Testimonial</a>
+                </div>
+              </li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+              <a
+                href="#reservation"
+                class="btn btn-warning me-lg-4 col-lg-auto col-5 rounded-1 mb-lg-0 mb-4 nav-button"
+                >Book A Table</a
+              >
+            </ul>
+          </div>
+        </nav>
+        <!-- navbar section end -->
+
+        <!-- hero section start -->
+
+        <section class="container" id="hero">
+          <div class="row align-item-center row-cols-lg-2 g-5 px-xxl-5">
+            <div class="col-lg-6 text-lg-start text-center ps-xxl-5" id="col1">
+              <h1 class="mb-3">
+                Enjoy our <br />
+                Delicious Meal
+              </h1>
+
+              <p class="">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Tempore ipsa aspernatur facilis distinctio veniam facere ab quis
+                nisi quasi est.
+              </p>
+              <a class="btn btn-warning mb-5 nav-button" href="#reservation">
+                Book A Table
+              </a>
+            </div>
+            <div class="col-lg-6 pb-5" id="col2">
+              <img src="./img/hero.png" alt="homePage img" class="img-fluid" />
+            </div>
+          </div>
+        </section>
+        <!-- hero section end -->
+      </div>
+
+      <!-- service section start -->
+      <section class="service" id="services">
+        <div class="container-xxl py-5 py-lg-4 my-5">
+          <div class="row row-cols-lg-4 row-sm-2 g-4">
+            <div class="col-lg-3">
+              <div class="card p-0">
+                <div class="card-body py-0">
+                  <i class="fa-solid fa-user-tie icon my-3"></i>
+                  <h3 class="mt-2">Master Chief</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga molestias obcaecati placeat
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card p-0">
+                <div class="card-body py-0">
+                  <i class="fa-solid fa-utensils icon my-3"></i>
+                  <h3 class="mt-2">Quality Food</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga molestias obcaecati placeat
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card p-0">
+                <div class="card-body py-0">
+                  <i class="fa-solid fa-cart-plus icon my-3"></i>
+                  <h3 class="mt-2">Online Order</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga molestias obcaecati placeat
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card p-0">
+                <div class="card-body py-0">
+                  <i class="fa-solid fa-headphones icon my-3"></i>
+                  <h3 class="mt-2">24/7 Service</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga molestias obcaecati placeat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- service section end -->
+
+      <!-- aboutus section start -->
+      <section class="about-us pb-5">
+        <div class="container-xxl mb-5">
+          <div class="row row-cols-lg-2">
+            <div class="col-lg-6">
+              <div class="row row-cols-2 g-4 pt-4">
+                <div class="col-8">
+                  <img
+                    src="img/about-1.jpg"
+                    alt="about page"
+                    class="img-fluid rounded imgtransition"
+                  />
+                </div>
+
+                <div class="col-4 mt-auto">
+                  <img
+                    src="img/about-2.jpg"
+                    alt="about page"
+                    class="img-fluid rounded imgtransition"
+                  />
+                </div>
+              </div>
+              <div class="row row-cols-2 g-4 pt-4 pb-4">
+                <div class="col-4">
+                  <img
+                    src="img/about-3.jpg"
+                    alt="about page"
+                    class="img-fluid rounded imgtransition"
+                  />
+                </div>
+
+                <div class="col-8">
+                  <img
+                    src="img/about-4.jpg"
+                    alt="about page"
+                    class="img-fluid rounded imgtransition"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 pt-lg-0 pt-5" id="about-col">
+              <div class="container p-4" id="main">
+                <h3>About us .....</h3>
+                <h1>
+                  Welcome to
+                  <span
+                    ><i class="fa-solid fa-utensils icon my-3 pe-3"></i></span
+                  >Resturant
+                </h1>
+                <p class="pt-4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quisquam laboriosam ipsa iusto sunt
+                </p>
+                <p class="pt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur soluta, qui id eaque fugit quas aliquam animi
+                  libero porro sequi?
+                </p>
+                <div class="row pt-3">
+                  <div class="col-6">
+                    <div class="row g-5">
+                      <div class="col-4">
+                        <h1 class="h1"><span class="me-lg-3">|</span>15</h1>
+                      </div>
+                      <div class="col-7">
+                        <p>Year of <br /><b>EXPERIENCE</b></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="row g-5">
+                      <div class="col-4">
+                        <h1 class="h1"><span class="me-lg-3">|</span>50</h1>
+                      </div>
+                      <div class="col-7">
+                        <p>Popular<br /><b>MASTER CHEF</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href=""
+                  class="btn btn-warning button rounded-1 text-light mt-3"
+                  >READ MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- aboutus section end -->
+
+      <!-- menu section start -->
+      <section class="menu" id="menus">
+        <div class="container-xxl">
+          <div class="container mt-5">
+            <div class="text-center">
+              <h5 class="section-title text-center text-warning fw-normal">
+                Food Menu
+              </h5>
+              <h1 class="mb-5">Most Popular Items</h1>
+            </div>
+
+            <div class="tab-class text-center">
+              <ul
+                class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5"
+              >
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                    data-bs-toggle="pill"
+                    href="tab-1"
+                  >
+                    <i class="fa-solid fa-coffee icon my-3 pe-3"></i>
+                    <div class="ps-3">
+                      <small class="text-body">Popular</small>
+                      <h6 class="mt-n1 mb-0 h6">Breakfast</h6>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                    data-bs-toggle="pill"
+                    href="tab-2"
+                  >
+                    <i class="fa-solid fa-hamburger icon my-3 pe-3"></i>
+                    <div class="ps-3">
+                      <small class="text-body">Special</small>
+                      <h6 class="mt-n1 mb-0 h6">Lunch</h6>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    href=""
+                    class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                    data-bs-toggle="pill"
+                    href="tab-3"
+                  >
+                    <i class="fa-solid fa-utensils icon my-3 pe-3"></i>
+                    <div class="ps-3">
+                      <small class="text-body">Lovely </small>
+                      <h6 class="mt-n1 mb-0 h6">Dinner</h6>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab-1">
+                  <div class="row row-col-lg-2 gx-5">
+                    <div class="col-lg-6 mb-3 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-1.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-2.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-3.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-4.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-5.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 menulist">
+                      <div class="d-flex align-items-center">
+                        <img
+                          style="width: 80px"
+                          src="img/menu-6.jpg"
+                          alt="menui"
+                          class="img-fluid"
+                        />
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                          <h5
+                            class="d-flex justify-content-between border-bottom pb-2"
+                          >
+                            <span>Chicken Burger</span>
+                            <span class="text-warning">$115</span>
+                          </h5>
+                          <small class="fst-italic"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolor eligendi sunt molestias magnam,
+                            architecto nostrum!</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- menu section end-->
+
+      <!-- reservation section start -->
+      <section class="reservation mb-5 pt-5">
+        <div class="container-xxl pt-5 pb-5" id="reservation">
+          <div class="row">
+            <div class="col-md-6 p-0" id="reserimg">
+              <img src="img/video.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="col-md-6" id="reserv-col">
+              <div class="row header pt-4 ps-2">
+                <h4 class="text-start fst-italic h4">Reservation</h4>
+                <h2 class="text-capitalize text-start h2">
+                  book a table online
+                </h2>
+              </div>
+              <div class="row gx-1 gy-2 pt-2">
+                <div class="col-6">
+                  <div class="form-floating form-control-sm">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control form-control-sm"
+                      placeholder="your name"
+                      spellcheck="false"
+                    />
+                    <label for="name" class="form-label">your name</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-floating form-control-sm">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control form-control-sm"
+                      placeholder="your name"
+                    />
+                    <label for="email" class="form-label">your email</label>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-floating form-control-sm date">
+                    <input
+                      type="date"
+                      name="date"
+                      id="date"
+                      class="form-control"
+                      placeholder="your name"
+                    />
+                    <label for="date" class="form-label"
+                      >your Date & time</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-floating form-control-sm">
+                    <select name="" id="select1" class="form-select">
+                      <option value=""></option>
+                      <option value="1">Person-1</option>
+                      <option value="2">Person-2</option>
+                      <option value="3">Person-3</option>
+                      <option value="4">Person-4</option>
+                    </select>
+                    <label for="select" class="form-label">No of person</label>
+                  </div>
+                </div>
+                <div class="col-12 p-2">
+                  <div class="form-floating">
+                    <textarea
+                      style="height: 100px"
+                      name=""
+                      id="txt"
+                      cols="30"
+                      rows="10"
+                      class="form-control"
+                    ></textarea>
+                    <label for="txt">Special Request</label>
+                  </div>
+                </div>
+                <div class="col-12 px-2">
+                  <button
+                    style="width: 100%"
+                    type="button"
+                    class="btn btn-warning text-uppercase rounded-1 mb-5"
+                  >
+                    book now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reservation section end -->
+
+      <!-- master section start -->
+      <section class="master">
+        <div class="container-xxl">
+          <div class="container mb-5 pt-md-5 pb-5" id="our-team">
+            <div class="row text-center">
+              <h5 class="text-capitalize h5">team members</h5>
+              <h2 class="text-capitalize h2">our master chefs</h2>
+            </div>
+
+            <div
+              class="row row-cols-lg-4 row-cols-md-2 g-4 mt-2 gx-md-5 gy-md-5"
+            >
+              <div class="col-lg-3 col-md-6">
+                <div class="text-center rounded overflow-hidden colz1 pb-3">
+                  <div class="overflow-hidden rounded-circle m-4">
+                    <img src="./img/team-1.jpg" alt="" class="img-fluid" />
+                  </div>
+
+                  <h5 class="text-capitalize">gokul</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 pt-lg-0 pt-5">
+                <div class="text-center rounded overflow-hidden colz1 pb-3">
+                  <div class="overflow-hidden rounded-circle m-4">
+                    <img src="./img/team-2.jpg" alt="" class="img-fluid" />
+                  </div>
+
+                  <h5 class="text-capitalize">raks</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 pt-lg-0 pt-5">
+                <div class="text-center rounded overflow-hidden colz1 pb-3">
+                  <div class="overflow-hidden rounded-circle m-4">
+                    <img src="./img/team-3.jpg" alt="" class="img-fluid" />
+                  </div>
+
+                  <h5 class="text-capitalize">vishwa</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 pt-lg-0 pt-5">
+                <div class="text-center rounded overflow-hidden colz1 pb-3">
+                  <div class="overflow-hidden rounded-circle m-4">
+                    <img src="./img/team-4.jpg" alt="" class="img-fluid" />
+                  </div>
+
+                  <h5 class="text-capitalize">lax</h5>
+                  <small>Designation</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- master section end-->
+      <!-- testimonial section start -->
+      <section class="testimonial pb-5">
+        <div class="container-xxl"id="testimonial">
+          <div class="container" >
+            <div class="text-center mb-5">
+              <h5 class="text-capitalize h5">testimonial</h5>
+              <h1 class="text-capitalize h1">our clients say !!!</h1>
+            </div>
+            <div class="row">
+              <div class="container">
+                <div id="carousel-practice" class="carousel slide">
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-practice"
+                      data-bs-slide-to="0"
+                      class="active li bg-warning"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-practice"
+                      data-bs-slide-to="1"
+                      class="li bg-warning"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-practice"
+                      data-bs-slide-to="2"
+                      class="li bg-warning"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-practice"
+                      data-bs-slide-to="3"
+                      class="li bg-warning"
+                    ></button>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row gy-3 d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-10">
+                          <div class="card m-3">
+                            <div class="card-body p">
+                              <div class="card-title">
+                                <i class="fa-solid fa-quote-left"></i>
+                              </div>
+                              <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae quod cum expedita
+                                dolorem magni, eligendi placeat. Numquam error
+                                autem delectus! Eius nam quae optio assumenda
+                                consequuntur dicta? Quas, ipsam dolorum!
+                              </div>
+                              <div class="row row-cols-2 mt-3">
+                                <div
+                                  class="col-4 d-flex align-items-center justify-content-center"
+                                >
+                                  <div class="rounded-circle overflow-hidden">
+                                    <img
+                                      src="img/testimonial-1.jpg"
+                                      alt=""
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <b>Lakshmi</b>
+                                    </div>
+                                    <div class="col-12">participants</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="row gy-3 d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-10">
+                          <div class="card m-3">
+                            <div class="card-body p">
+                              <div class="card-title">
+                                <i class="fa-solid fa-quote-left"></i>
+                              </div>
+                              <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae quod cum expedita
+                                dolorem magni, eligendi placeat. Numquam error
+                                autem delectus! Eius nam quae optio assumenda
+                                consequuntur dicta? Quas, ipsam dolorum!
+                              </div>
+                              <div class="row row-cols-2 mt-3">
+                                <div
+                                  class="col-4 d-flex align-items-center justify-content-center"
+                                >
+                                  <div class="rounded-circle overflow-hidden">
+                                    <img
+                                      src="img/testimonial-2.jpg"
+                                      alt=""
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <b>Indra</b>
+                                    </div>
+                                    <div class="col-12">participants</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="row gy-3 d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-10">
+                          <div class="card m-3">
+                            <div class="card-body p">
+                              <div class="card-title">
+                                <span class="">
+                                  <i class="fa-solid fa-quote-left"></i
+                                ></span>
+                              </div>
+                              <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae quod cum expedita
+                                dolorem magni, eligendi placeat. Numquam error
+                                autem delectus! Eius nam quae optio assumenda
+                                consequuntur dicta? Quas, ipsam dolorum!
+                              </div>
+                              <div class="row row-cols-2 mt-3">
+                                <div
+                                  class="col-4 d-flex align-items-center justify-content-center"
+                                >
+                                  <div class="rounded-circle overflow-hidden">
+                                    <img
+                                      src="img/testimonial-3.jpg"
+                                      alt=""
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <b>Gokulnathan</b>
+                                    </div>
+                                    <div class="col-12">participants</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="row gy-3 d-flex justify-content-center">
+                        <div class="col-md-6 col-lg-10">
+                          <div class="card m-3">
+                            <div class="card-body p">
+                              <div class="card-title">
+                                <i class="fa-solid fa-quote-left"></i>
+                              </div>
+                              <div class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Molestiae quod cum expedita
+                                dolorem magni, eligendi placeat. Numquam error
+                                autem delectus! Eius nam quae optio assumenda
+                                consequuntur dicta? Quas, ipsam dolorum!
+                              </div>
+                              <div class="row row-cols-2 mt-3">
+                                <div
+                                  class="col-4 d-flex align-items-center justify-content-center"
+                                >
+                                  <div class="rounded-circle overflow-hidden">
+                                    <img
+                                      src="img/testimonial-4.jpg"
+                                      alt=""
+                                      class="img-fluid"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <b>kavi</b>
+                                    </div>
+                                    <div class="col-12">participants</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section end -->
+
+      <!-- footer section start -->
+      <section class="container-fluid bg-dark pt-5 mt-5" id="contact">
+        <div class="container py-5">
+          <div class="row g-5 border-bottom border-light pb-5">
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-capitalize mb-4 text-warning">company</h5>
+              <div class="d-flex flex-column gap-2">
+                <a href="" class="link-light text-decoration-none">About-us</a>
+                <a href="" class="link-light text-decoration-none"
+                  >contact us</a
+                >
+                <a href="" class="link-light text-decoration-none">
+                  reservation
+                </a>
+                <a href="" class="link-light text-decoration-none">Privacy Policy</a>
+                <a href="" class="link-light text-decoration-none">Terms & Condition</a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-capitalize mb-3 text-warning">contact</h5>
+              <p class="mb-2 text-light"><i class="fa-solid fa-location-dot me-3"></i>KCT saravanampatti</p>
+              <p class="mb-2 text-light"><i class="fa-solid fa-phone me-3"></i></i>+012 345 67890</p>
+              <p class="mb-2 text-light"><i class="fa-solid fa-envelope me-3"></i>jeeva@project.com</p>
+
+              <div class="d-flex pt-2 gap-2">
+                <a href="" class="btn btn-outline-light rounded-circle btn-social"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="btn btn-outline-light rounded-circle btn-social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="btn btn-outline-light rounded-circle btn-social"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/jeevanantham14/" class="btn btn-outline-light rounded-circle btn-social"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-capitalize mb-3 text-warning">contact</h5>
+              <p class="text-light mb-0">Monday-Saturday</p>
+              <p class="text-light ">09AM-09PM</p>
+              <p class="text-light mb-0">Sunday</p>
+              <p class="text-light">10AM-08pm</p>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-capitalize mb-3 text-warning">contact</h5>
+              <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, vitae.</p>
+              <div class="position-relative mx-auto" style="max-width: 400px;">
+                <input type="text" name="email" id="email" placeholder="Enter Your email" class="form-control border border-warning w-100 py-3 ps-4 pe-5" autocomplete="off">
+                <button class="btn btn-warning py-2 text-light position-absolute top-0 end-0 mt-2 me-2">SIGN UP</button>
+              </div>
+            </div>
+            
+
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="text-light pt-4">&copy; Jeeva WEB designer | All Right Reserved</p>
+            </div>
+            <div class="col-lg-4  d-flex align-items-center justify-content-lg--end ">
+              <div class="d-flex pt-4 ">
+                <p class="text-light">Home | </p>
+                <p class="text-light">Cookies | </p>
+                <p class="text-light">Help | </p>
+                <p class="text-light">FQAs | </p>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          
+          <div class="footer d-flex justify-content-between">
+           
+            
+        </div>
+       
+      </section>
+      <!-- footer section end -->
+    </div>
+
+    <!-- bootstrap js cdn link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var a = document.querySelectorAll(".nav-link");
+      a.forEach(function (e) {
+        e.addEventListener("click", function (event) {
+          a.forEach(function (ele) {
+            ele.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
