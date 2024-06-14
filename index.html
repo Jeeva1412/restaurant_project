@@ -116,7 +116,7 @@
                 Tempore ipsa aspernatur facilis distinctio veniam facere ab quis
                 nisi quasi est.
               </p>
-              <a class="btn btn-warning mb-5 nav-button" href="#reservation">
+              <a id="top" class="btn btn-warning mb-5 nav-button" href="#">
                 Book A Table
               </a>
             </div>
@@ -958,6 +958,16 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      <script>
+// Get the button element
+var bookButton = document.getElementById("top");
+
+// Add an event listener to listen for click events
+bookButton.addEventListener("click", function() {
+    // When the button is clicked, show an alert message
+    alert("Booked a table");
+});
+</script>
       var a = document.querySelectorAll(".nav-link");
       a.forEach(function (e) {
         e.addEventListener("click", function (event) {
